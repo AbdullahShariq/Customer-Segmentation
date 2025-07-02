@@ -1,5 +1,3 @@
-
-
 # Customer Segmentation Using Graph Clustering
 
 ## Overview
@@ -10,7 +8,17 @@ This project segments e-commerce customers using graph-based clustering with `Ne
 ## Files
 - **main.py**: Processes data, builds the graph, performs clustering, visualizes results, and calculates metrics.
 - **clusters.json**: Stores customer IDs grouped into clusters.
-- **ecommerce_customer_data_custom_ratios.csv**: Input dataset (not included) with `Customer ID`, `Product Category`, and `Quantity`.
+- **ecommerce_customer_data_custom_ratios.csv**: Input dataset with `Customer ID`, `Product Category`, and `Quantity`.
+
+---
+
+## Technologies Used
+
+- **Python**: Core programming language.
+- **NetworkX**: For graph construction and community detection.
+- **Pandas**: For data preprocessing and manipulation.
+- **Matplotlib**: For graph visualization.
+- **NumPy**: For numerical computations.
 
 ---
 
@@ -33,12 +41,17 @@ Place `ecommerce_customer_data_custom_ratios.csv` in the project directory.
 ---
 
 ## Running the Project
-1. Ensure dependencies and dataset are ready.
-2. Run:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AbdullahShariq/Customer-Segmentation.git
+   cd Customer-Segmentation
+   ```
+2. **Ensure dependencies and dataset are ready.**
+3. **Run:**
    ```bash
    python main.py
    ```
-3. Outputs: `clusters.json`, graph visualization, and metrics printed to console.
+4. **Outputs:** `clusters.json`, graph visualization, and metrics printed to console.
 
 ---
 
@@ -46,6 +59,3 @@ Place `ecommerce_customer_data_custom_ratios.csv` in the project directory.
 - Dataset must include `Customer ID`, `Product Category`, and `Quantity`.
 - Disconnected graphs report "Inf" for diameter and path length.
 - Random seed (`random_state=42`) ensures reproducibility.
-
-
-
